@@ -1,0 +1,71 @@
+<!-- product-details.component.html -->
+<div class="main">
+    <mat-card class="product-card">
+        <div class="product-tumb">
+            <img mat-card-image [src]="product.main_picture_url" alt="{{ product.name }}" class="product_image">
+            <div class="badge">{{ product.status }}</div>
+        </div>
+        <mat-card-content class="product-details">
+
+            
+
+            <h1 class="product-name">{{ product.name }}</h1>
+            <p class="product-description">{{ product.details }}</p>
+            <mat-nav-list class="product-list" disableRipple>
+                <mat-list-item class="product-list-item" >
+                    <h1 mat-line class="product-label" > Brand: <span mat-line
+                            class="product-value">{{ product.brand_name }}</span></h1>
+
+                </mat-list-item>
+                <mat-list-item class="product-list-item">
+
+                    <h1 mat-line class="product-label" style="display: inline-block;"> Color: <span mat-line
+                            class="product-value">{{ product.color }}</span></h1>
+
+                </mat-list-item>
+                <mat-list-item class="product-list-item">
+
+                    <h1 mat-line class="product-label" style="display: inline-block;"> Designer: <span mat-line
+                            class="product-value">{{ product.designer }}</span></h1>
+
+                </mat-list-item>
+                <mat-list-item class="product-list-item">
+
+                    <h1 mat-line class="product-label" style="display: inline-block;"> Price: <span mat-line
+                            class="product-value">$ {{ product.retail_price_cents / 100 }}</span></h1>
+
+
+                </mat-list-item>
+                <mat-list-item class="product-list-item">
+
+
+                    <h1 mat-line class="product-label" style="display: inline-block;">Shoe Condition: <span mat-line
+                            class="product-value"> {{ product.shoe_condition }}</span></h1>
+
+                </mat-list-item>
+                <mat-list-item class="product-list-item">
+                    <h1 mat-line class="product-label" style="display: inline-block;">Silhouette: <span mat-line
+                            class="product-value">{{ product.silhouette }}</span></h1>
+
+                </mat-list-item>
+                <mat-list-item class="product-list-item">
+                    <h1 mat-line class="product-label" style="display: inline-block;">Gender: <span mat-line
+                            class="product-value">{{ product.gender.join(', ') }}</span></h1>
+
+
+                </mat-list-item>
+            </mat-nav-list>
+
+            <mat-list-item class="footer" style="margin-right: 10px;">
+                <mat-card-footer align="right">
+                    <div class="product-links">
+                        <a mat-button color="warn" href="#"><mat-icon>shopping_cart</mat-icon> Add to Cart</a>                       
+                      </div>
+                </mat-card-footer>
+            </mat-list-item>
+        </mat-card-content>
+    </mat-card>
+
+</div>
+
+

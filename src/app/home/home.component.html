@@ -1,0 +1,26 @@
+<div style="flex-wrap: wrap;">
+    <div class="main">
+      <div class="cards">
+        <div *ngFor="let shoe of shoesData;index as i" class="product-card">
+          <div class="badge">{{ shoe.status }}</div><!-- app.component.html -->
+          <div class="product-tumb">
+            <img [src]="shoe.main_picture_url" alt="Shoe Image" class="product-img">
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">{{ shoe.category.join(', ') }}</span>
+            <h4><a href="#">{{ shoe.name }}</a></h4>
+            <p>{{ shoe.brand_name }}</p>
+            <div class="product-bottom-details">
+              <div class="product-price">$ {{ shoe.retail_price_cents / 100 }} <small>$ {{ shoe.original_price_cents / 100 }}</small></div>
+              <div class="product-links">
+                <a href="#">Add to Cart</a>
+                <a [routerLink]="['/product',shoe.id ]">View Details</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
