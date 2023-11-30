@@ -118,7 +118,7 @@ body{
     font-weight: 600;
   }
   
-  .product_image {
+  .image {
     filter: drop-shadow(10px 10px 10px black);
     transition: transform 0.3s;
 
@@ -136,10 +136,7 @@ body{
     transition: 0.3s;
     font-size: 17px;
   }
-  
-  .product-links a:hover {
-    color: #fbb72c;
-  }
+
 
 
 

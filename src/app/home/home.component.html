@@ -11,12 +11,14 @@
             <h4><a href="#">{{ shoe.name }}</a></h4>
             <p>{{ shoe.brand_name }}</p>
             <div class="product-bottom-details">
-              <div class="product-price">$ {{ shoe.retail_price_cents / 100 }} <small>$ {{ shoe.original_price_cents / 100 }}</small></div>
+              <div class="product-price">$ {{ shoe.retail_price_cents / 100 }} </div>
               <div class="product-links">
-                <a href="#">Add to Cart</a>
-                <a [routerLink]="['/product',shoe.id ]">View Details</a>
-
-              </div>
+                <button mat-raised-button color="accent">Add to Cart</button>
+                <a [routerLink]="['/product', shoe.id]">
+                    <button mat-raised-button color="primary">View Details</button>
+                </a>
+            </div>
+            
             </div>
           </div>
         </div>
