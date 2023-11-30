@@ -1,8 +1,10 @@
 /* Add this to your existing CSS or update as needed */
 
 
-html1{
-  background: #eee;
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee !important; 
 }
 .main {
     display: flex;
