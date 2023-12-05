@@ -248,3 +248,10 @@ a {
     margin:0 auto;
   }
 }
+
+@media all and (min-width:741px) and (max-width:924px){
+  .product-card {
+    width: calc(50% - 30px);
+
+}
+}

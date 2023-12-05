@@ -44,13 +44,13 @@ ul {
     
     margin: auto;
     overflow: hidden;
-    padding: 0 30px;
+    padding: 8px 30px;
   }
   
   .navbar .container {
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 19px 30px;
     align-items: center;
 
   }
@@ -107,132 +107,41 @@ ul {
       display: none;
     }
 
-    @media all and (max-width: 1147px) {
-      .hamburger {
-        display: block;
-        font-size: 2rem !important;
+    .items-tobe-hidden{
+      display: flex;
+      
+    }
+
+
+    @media screen and (max-width: 1023px) {
+      ul a.items-tobe-hidden {
+        display: none !important;
       }
-    
-      .navbar {
-        justify-content: space-evenly !important;
+      .hamburger{
+        display:inline;
       }
-    
-      .items {
-        display: none;
+      .navbar .container{
+        padding: 3px 33px;
       }
-    
+    }
+
+    @media screen and (max-width:605px){
+      .items-tobe-hidden{
+        display: inline;
+      }
       .navbar .container {
         display: flex;
-        justify-content: space-evenly;
-        padding: 30px;
-        align-items: center;
-      }
-    }
-    @media all and (max-width:321px){
-
-      .navbar{
-        background-color: black;
-        /* background-color: #a48686; */
-        color: white;
-        box-shadow: 2px 2px 2px 10px rgb(0, 0, 0);
-        z-index: 120;
-        position: sticky;
-        top: 0;
-        width: 100%;
+        padding: 3px 33px;
+        /* justify-content: flex-start; */
         
     }
-    
-    .pre-logo-svg {
-      transform: scale(5);
-      height: 100%;
-      width: 100%;
+    .logo{
+      width: 150px;
+     
     }
-    
-    ul {
-        list-style: none;
-      }
-      
-      h1 {
-        font-size: 8rem;
-        color: #fff;
-        font-weight: 500;
-      }
-      
-      
-      
-      a {
-        color: var(--dark-gray);
-        text-decoration: none;
-        font-size: 18px;
-        text-transform: uppercase;
-      }
-      
-      .logo {
-        width: 200px;
-      }
-      
-      .container {
-        
-        margin: auto;
-        overflow: hidden;
-        padding: 0 10px;
-      }
-      
-      .navbar .container {
-        display: flex;
-        justify-content: space-around;
-        padding: 30px;
-        align-items: center;
-    
-      }
-    
-    
-      .innerContainer{
-        display: flex;
-        justify-content: space-around;
-        
-      }
-    
-      
-      .navbar ul {
-        justify-self: flex-end;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      .navbar li {
-        padding: 0 30px;
-      }
-      
-      .navbar ul li a:hover {
-        color: rgb(228, 211, 211);
-      }
-    
-          /* Search box styling */
-          .search-box {
-            position: relative;
-        }
-    
-        input[type="text"] {
-            padding: 10px;
-            width: 200px;
-            border-radius: 20px;
-            border: none;
-            outline: none;
-            padding: 10px;
-        }
-    
-        button {
-            position: absolute;
-            top: 50%;
-            right: 5px;
-            transform: translateY(-50%);
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            
-        }
-    
+    .mat-icon{
 
     }
+    }
+    
+    

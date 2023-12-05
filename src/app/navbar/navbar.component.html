@@ -2,24 +2,23 @@
   <div class="container">
     <div class="innerContainer">
       <a [routerLink]="['/']">
-        
-            <img src="https://assets.codepen.io/7773162/Group+1.png" alt="" class="logo" /> 
+        <img  class="logo-img" src="https://assets.codepen.io/7773162/Group+1.png" alt="" class="logo" /> 
       </a>
     </div>
-    <div>
+    <div class="navbar-links">
       <ul class="nav">
-        <li><a [routerLink]="['/']" class="items">Home</a></li>
-        <li><a [routerLink]="['/']" class="items">Collection</a></li>
-        <li><a [routerLink]="['/']" class="items">New Arrival</a></li>
-        <li><a [routerLink]="['/']" class="items">Contacts</a></li>
-        <li>
-          <div class="search-box items">
-            <input type="text" placeholder="Search" />
-            <button type="button"><i class="material-icons">search</i></button>
-          </div>
+        <div class="items-tobe-hidden" >
+        <li><a [routerLink]="['/']" class="items items-tobe-hidden">Home</a></li>
+        <li><a [routerLink]="['/']" class="items items-tobe-hidden">Collection</a></li>
+        <li><a [routerLink]="['/']" class="items items-tobe-hidden">New Arrival</a></li>
+        <li><a [routerLink]="['/']" class="items items-tobe-hidden">Contacts</a></li>
+      </div>
+        <li class="search-box items items-tobe-hidden" style="display: none;">
+          <input type="text" placeholder="Search" />
+          <button type="button"><i class="material-icons">search</i></button>
         </li>
-        <li routerLink="/cart">
-          <a [routerLink]="['cart']">
+        <li routerLink="/cart" class="items-tobe-hidden">
+          <a [routerLink]="['cart']"  class="items-tobe-hidden">
             <mat-icon [matBadge]="count" matBadgeOverlap="false" matBadgeColor="accent" class="items">shopping_cart</mat-icon>
           </a>
         </li>
