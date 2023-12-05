@@ -1,6 +1,7 @@
-Certainly! Based on the information provided in your conversations, it seems like you are working on an Angular project that involves creating a web application for an e-commerce platform dealing with shoes. Here's a brief overview:
-
-### Project Overview:
+Process 1.npm i 
+    2.ng serve --open
+    
+ Project Overview:
 
 1. Technology Used:
    - Frontend:
