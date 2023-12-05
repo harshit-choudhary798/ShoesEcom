@@ -42,12 +42,18 @@ Certainly! Based on the information provided in your conversations, it seems lik
      - Organizing components, services, and other files in a structured Angular project.
 
 
+![Screenshot (1165)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/55822152-62f1-41be-af92-51265a2a567b)
 
 ![Screenshot (1166)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/5270560e-1e93-4049-b7b8-7383eb4a73cc)
+
 ![Screenshot (1167)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/a793bbcc-1f78-4fe4-a614-28b22ce9ca24)
+
 ![Screenshot (1168)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/df0bb395-fed5-4402-8771-d8794eeb3a76)
+
 ![Screenshot (1171)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/3af813b1-f4f4-4b57-bc40-355f84ac6971)
+
 ![Screenshot (1169)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/79363f17-2106-41e9-9b71-79bdde3536ff)
+
 ![Screenshot (1170)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/bfbe79c4-823b-4a58-92d1-5e1e5940507e)
 
 
