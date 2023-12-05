@@ -1,78 +1,77 @@
 .container {
-    text-align: center;
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-  }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
-  .empty-container{
-   margin-top: 50px;
-  }
-  
-  .cart-heading {
-    font-size: 48px;
-    margin-bottom: 50px;
-    font-weight: 800;
-    font-family: 'Mochiy Pop One', sans-serif;
-  }
-  
-  .description {
-    font-size: 24px;
-    margin-bottom: 20px;
-  
-    color: black;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .empty-cart {
+}
 
-    height: max-content;
-  }
-  
-  .product-links {
-    margin-top: 20px;
-  }
-  
+.empty-container {
+  margin-top: 50px;
+}
 
-  button {
-    font-size: 16px;
-  }
-  .products{
-    width: 48%;
-  }
+.cart-heading {
+  font-size: 48px;
+  margin-bottom: 50px;
+  font-weight: 800;
+  font-family: 'Mochiy Pop One', sans-serif;
+}
 
-  mat-card{
-    width: 700px;
-  }
-  mat-header-cell{
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
+.description {
+  font-size: 24px;
+  margin-bottom: 20px;
 
-  .product-price {
-    font-size: 18px;
-    color: #fbb72c;
-    font-weight: 600;
-  }
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
 
-  .product-brand{
- 
-    font-weight: 500 !important;
-    font-size: 1.3rem;
-  }
+.empty-cart {
 
-  .mat-elevation-z8{
-    width: 100%;
-  }
+  height: max-content;
+}
+
+.product-links {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 16px;
+}
+
+.products {
+  width: 48%;
+}
+
+mat-card {
+  width: 700px;
+}
+
+mat-header-cell {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #fbb72c;
+  font-weight: 600;
+}
+
+.product-brand {
+
+  font-weight: 500 !important;
+  font-size: 1.3rem;
+}
+
+.mat-elevation-z8 {
+  width: 100%;
+}
 
 
 .container1 {
   padding: 100px;
   display: flex;
-  justify-content: center;
   align-items: center;
 
 }
@@ -80,7 +79,7 @@
 .order-card {
   width: 600px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-  background-color:  #fffdf6;
+  background-color: #fffdf6;
   border: 1px solid #fff;
 
 }
@@ -124,7 +123,7 @@
 
 .amounts {
 
-  /* color: black; */ 
+  /* color: black; */
   font-family: 'Roboto', sans-serif !important;
   font-size: 1rem !important;
   color: red;
@@ -156,46 +155,70 @@
   font-size: 17px;
 }
 
-.promo{
+.promo {
   display: flex;
   justify-content: right;
 }
 
-.apply-code{
-  width: 38% !important; margin-bottom: 40px;
+.apply-code {
+  width: 38% !important;
+  margin-bottom: 40px;
 }
-.apply-code-header{
-  display: flex; justify-content: flex-end;
+
+.apply-code-header {
+  display: flex;
+  justify-content: flex-end;
 }
-.order-card-actions{
-  display: flex; justify-content: center; align-items: center;
+
+.order-card-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.order-card-actions-btn{
-  width: 60% !important; margin-bottom: 40px;
-  
+
+.order-card-actions-btn {
+  width: 60% !important;
+  margin-bottom: 40px;
+
 }
-.place-order-container{
+
+.place-order-container {
   margin-top: 20px;
-  display:  flex;
+  display: flex;
   flex-direction: row-reverse;
-  width: 100%;
+  width: 95.3%;
   padding: 0 100px;
   gap: 20px;
 }
-.place-order{
+
+.place-order {
   padding: 0 100px;
 }
 
 .scrollable-table {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  max-height: 700px; 
+  max-height: 700px;
   overflow: hidden;
   overflow-y: auto;
-  width: 100%;
+  width: 80%;
+
 }
-.heading-rows{
-  position: fixed;
-  width: 100%;
+
+.scrollable-table {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  max-height: 700px;
+  overflow: hidden;
+  overflow-y: auto;
+
+  margin: 0 auto;
+}
+
+.heading-rows {
+  position: sticky;
+  top: 0px;
+
+  background-color: black !important;
+  font-size: 2rem;
 
 }
 
@@ -210,4 +233,57 @@
 
 .scrollable-table::-webkit-scrollbar-track {
   background-color: #f1f1f1;
+}
+
+
+@media all and (max-width: 426px) {
+  .scrollable-table {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    overflow: auto;
+    width: 100%;
+    text-align: center;
+    max-height: 400px;
+  }
+  mat-header-cell {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.product-brand {
+  font-weight: 300 !important;
+  font-size: 13px;
+}
+.products{
+  width: 73%;
+}
+.empty-cart{
+  width: 80%;
+}
+.place-order-container {
+  /* font-size: 0px; */
+  margin-top: 20px;
+  display: flex;
+  /* flex-direction: row; */
+  width: 100%;
+
+  /* gap: 20px; */
+  /* width: 33%; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+.place-order {
+  padding: 0 30px;
+}
+.place-order-container{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 95.3%;
+  padding: 0 0px;
+  gap: 20px;
+}
+.place-order{
+  font-size: 12px;
+}
 }

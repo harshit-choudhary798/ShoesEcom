@@ -1,38 +1,35 @@
-
 <nav class="navbar">
   <div class="container">
     <div class="innerContainer">
-    <a [routerLink]="['/']">
-      <!-- <img src="https://assets.codepen.io/7773162/Group+1.png" alt="" class="logo" /> -->
-      <svg aria-hidden="true" class="pre-logo-svg" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd"></path></svg>
-    </a>
-</div>
-<div>
-    <ul class="nav">
-      <li><a [routerLink]="['/']" class="items">Home</a></li>
-      <li><a [routerLink]="['/']" class="items">Collection</a></li>
-      <li><a [routerLink]="['/']" class="items">New Arrival</a></li>
-      <li><a [routerLink]="['/']" class="items">Contacts</a></li>
-      
-      <li>
-        <div class="search-box items" >
+      <a [routerLink]="['/']">
+        <svg aria-hidden="true" class="pre-logo-svg" focusable="false" viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+          <path fill="currentColor" fill-rule="evenodd" d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z" clip-rule="evenodd"></path>
+        </svg>
+      </a>
+    </div>
+    <div>
+      <ul class="nav">
+        <li><a [routerLink]="['/']" class="items">Home</a></li>
+        <li><a [routerLink]="['/']" class="items">Collection</a></li>
+        <li><a [routerLink]="['/']" class="items">New Arrival</a></li>
+        <li><a [routerLink]="['/']" class="items">Contacts</a></li>
+        <li>
+          <div class="search-box items">
             <input type="text" placeholder="Search" />
             <button type="button"><i class="material-icons">search</i></button>
-        </div>
-    </li>
-
-    <li routerLink="/cart"><a [routerLink]="['cart']" ><mat-icon [matBadge]="count" matBadgeOverlap="false" matBadgeColor="accent" class="items">shopping_cart</mat-icon>
-    </a></li>
-
-    <li class="hamburger1">
-      <a href="#" class="hamburger">
-        <mat-icon class="material-icons" style="font-size: 40px !important">menu</mat-icon>
-      </a>
-    </li>
-      
-
-
-    </ul>
-</div>
+          </div>
+        </li>
+        <li routerLink="/cart">
+          <a [routerLink]="['cart']">
+            <mat-icon [matBadge]="count" matBadgeOverlap="false" matBadgeColor="accent" class="items">shopping_cart</mat-icon>
+          </a>
+        </li>
+        <li class="hamburger1">
+          <a href="#" class="hamburger">
+            <mat-icon class="material-icons" style="font-size: 40px !important">menu</mat-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
