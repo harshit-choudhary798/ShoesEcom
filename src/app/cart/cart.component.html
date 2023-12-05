@@ -1,0 +1,71 @@
+<!-- cart.component.html -->
+
+<div fxLayout="column" fxLayoutAlign="center center" class="container">
+  <div  class="empty-container">
+    <ng-container *ngIf="empty; else detailsSection">
+      <h1 class="cart-heading">Cart Empty 😕</h1>
+      <p class="description">
+        You probably haven't ordered anything yet. To order any product, go to the main page.
+      </p>
+      <a>
+        <img class="empty-cart" src="https://i.ibb.co/bRv9wSm/empty-cart.png" alt="empty-cart" />
+      </a>
+      <div class="product-links">
+        <a>
+          <button mat-raised-button color="accent" [routerLink]="['']">Add to Cart</button>
+        </a>
+      </div>
+    </ng-container>
+  </div>
+
+
+  <div class="table-container">
+  <ng-template #detailsSection>
+    <div class="scrollable-table">
+    <mat-table [dataSource]="items" class="mat-elevation-z8">
+      <ng-container matColumnDef="image">
+        <mat-header-cell *matHeaderCellDef> Image </mat-header-cell>
+        <mat-cell *matCellDef="let element"> <img class="products" [src]="element.main_picture_url" alt="Product Image" /> </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="price">
+        <mat-header-cell *matHeaderCellDef> Price </mat-header-cell>
+        <mat-cell *matCellDef="let element" class="product-price"> ${{ element.retail_price_cents / 100 }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="brand">
+        <mat-header-cell *matHeaderCellDef> Brand </mat-header-cell>
+        <mat-cell *matCellDef="let element" class="product-brand" > {{ element.brand_name }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="quantity">
+        <mat-header-cell *matHeaderCellDef> Quantity </mat-header-cell>
+        <mat-cell *matCellDef="let element" class="product-brand"> {{ element.quantity }} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="Remove">
+        <mat-header-cell *matHeaderCellDef> Remove </mat-header-cell>
+        <mat-cell *matCellDef="let element" (click)="removeItem(element)"> 
+          <mat-icon class="material-symbols-outlined" style="color: red;cursor: pointer;" >delete</mat-icon>
+        </mat-cell>
+      </ng-container>
+      
+      <mat-header-row *matHeaderRowDef="['image', 'price', 'brand', 'quantity','Remove']" style="background-color: black; font-size: 2rem;" class="heading-rows"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: ['image', 'price', 'brand', 'quantity','Remove']"></mat-row>
+    </mat-table>
+
+
+   </div>
+
+    <div class="place-order-container">
+      
+      <button mat-raised-button color="primary" class="place-order" (click)="placeOrder()" >Place Order</button>
+      <button mat-raised-button color="accent" class="place-order" routerLink="" >Add More +</button>
+    </div>
+
+    
+
+  </ng-template>
+
+</div>
+</div>
