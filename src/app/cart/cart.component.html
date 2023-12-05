@@ -21,7 +21,7 @@
 
   <div class="table-container">
   <ng-template #detailsSection>
-    <div class="scrollable-table">
+    <div class="scrollable-table"  >
     <mat-table [dataSource]="items" class="mat-elevation-z8">
       <ng-container matColumnDef="image">
         <mat-header-cell *matHeaderCellDef> Image </mat-header-cell>
@@ -40,7 +40,7 @@
 
       <ng-container matColumnDef="quantity">
         <mat-header-cell *matHeaderCellDef> Quantity </mat-header-cell>
-        <mat-cell *matCellDef="let element" class="product-brand"> {{ element.quantity }} </mat-cell>
+        <mat-cell *matCellDef="let element" class="product-brand" > {{ element.quantity }} </mat-cell>
       </ng-container>
 
       <ng-container matColumnDef="Remove">

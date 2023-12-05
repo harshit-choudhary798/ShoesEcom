@@ -50,6 +50,7 @@ mat-header-cell {
   color: white;
   font-size: 1.2rem;
   font-weight: 400;
+
 }
 
 .product-price {
@@ -62,6 +63,7 @@ mat-header-cell {
 
   font-weight: 500 !important;
   font-size: 1.3rem;
+  
 }
 
 .mat-elevation-z8 {
@@ -236,7 +238,7 @@ mat-header-cell {
 }
 
 
-@media all and (max-width: 426px) {
+@media all and (max-width: 745px) {
   .scrollable-table {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     overflow: auto;
@@ -248,11 +250,17 @@ mat-header-cell {
     color: white;
     font-size: 14px;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px !important;
+    
 }
 
 .product-brand {
   font-weight: 300 !important;
   font-size: 13px;
+  display: flex;
+ justify-content: center;
 }
 .products{
   width: 73%;
@@ -286,4 +294,25 @@ mat-header-cell {
 .place-order{
   font-size: 12px;
 }
+.product-price{
+  font-size: 12px;
+}
+}
+
+@media all and (min-width:426px) and (max-width:767px){
+  mat-header-cell {
+   
+    font-size: 18px;
+
+   
+    
+}
+
+.product-brand {
+  font-weight: 300 !important;
+  font-size: 18px;
+
+}
+
+
 }
