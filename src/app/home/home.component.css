@@ -9,7 +9,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  
 
   
 }
@@ -21,7 +20,6 @@ a {
   width: 80%;
   margin-top: 30px;
   flex-wrap: wrap;
-  
 }
 
 .product-card {
@@ -32,11 +30,7 @@ a {
   background: #fafafa;
   display: flex;
   flex-direction: column;
-  
 }
-
-
-
 .badge {
   position: absolute;
   left: 0;
@@ -47,7 +41,6 @@ a {
   background: blue;
   color: #fff;
   padding: 3px 10px;
-  
 }
 
 .product-tumb {
@@ -56,8 +49,7 @@ a {
   justify-content: center;
   height: 300px;
   padding: 50px;
-  box-sizing: border-box !important;
-  
+  background: #f0f0f0;
 }
 
 .product-tumb img {
@@ -82,7 +74,7 @@ a {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  /* color: #ccc; */
+  color: #ccc;
   margin-bottom: 18px;
 }
 
@@ -112,6 +104,7 @@ a {
   color: #fbb72c;
 }
 
+
 .mat-card {
   width: calc(33.33% - 30px);
   margin: 15px;
@@ -119,7 +112,7 @@ a {
   border-radius: 8px;
   overflow: hidden;
   transition: 0.3s;
-  background-color: #fff;
+  /* background-color: #fff; */
   display: flex;
   flex-direction: column;
 }
@@ -156,6 +149,85 @@ a {
   display: inline-block;
   margin-right: 5px;
 }
+
+
+.poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  margin-top: 10px;
+  
+}
+
+.poster-image {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 2 / 1; /* This sets the aspect ratio to 2:1 (width:height) */
+
+}
+
+
+
+.products-main-header {
+  margin-top: 10px;
+  color: #ccc; 
+  
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 4px 8px 0px;
+
+  
+}
+
+.products-main-header h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-size: 3rem;
+  
+}
+
+
+.category-links {
+
+  margin-top: 20px;
+
+}
+
+.category-link {
+  color: #2c3e50;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 10px;
+  /* border: 2px solid #2c3e50;  */
+  border-radius: 5px; 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, #2c3e50 0px 0px 0px 2px;
+  
+  
+}
+.category-link:hover {
+  text-decoration: none;
+  color: #e74c3c; 
+}
+
+
+
+  
+  
+
+
+
 @media all and (max-width:950px){
   .cards{
     width: 100%;

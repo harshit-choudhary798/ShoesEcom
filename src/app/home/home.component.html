@@ -1,26 +1,36 @@
-<div>
-  <img style="width: 100%;" src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_2490,c_limit/11ff874b-e718-4634-a8fe-be0712524133/nike-just-do-it.png" alt="Nike Logo">
+
+<div class="poster">
+  <img class="poster-image" src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_2490,c_limit/11ff874b-e718-4634-a8fe-be0712524133/nike-just-do-it.png" alt="">
+  
 </div>
+
+<div class="products-main-header">
+  <h1>Categories</h1>
+  <div class="category-links">
+      <a href="#" class="category-link" >All</a>
+      <a href="#" class="category-link" >Men's</a>
+      <a href="#" class="category-link" >Women's</a>
+      <a href="#" class="category-link" >Other Category</a> 
+  </div>
+</div>
+
 
 <div style="flex-wrap: wrap; background-color: white;">
     <div class="main">
       <div class="cards">
         <div *ngFor="let shoe of shoesData;index as i" class="product-card">
-          <div class="badge" >{{ shoe.status }}</div>
+          <div class="badge">{{ shoe.status }}</div>
           <div class="product-tumb">
             <img [src]="shoe.main_picture_url" alt="Shoe Image" class="product-img">
           </div>
           <div class="product-details">
-            <span class="product-catagory">{{ shoe.category }}</span>
+            <span class="product-catagory">{{ shoe.category.join(', ') }}</span>
             <h4><a href="#">{{ shoe.name }}</a></h4>
             <p>{{ shoe.brand_name }}</p>
             <div class="product-bottom-details">
-
               <div class="product-price">$ {{ shoe.retail_price_cents / 100 }} </div>
               <div class="product-links">
-                <button mat-raised-button color="accent">
-                  
-                  Add to Cart</button>
+                <button mat-raised-button color="accent" (click)="addItem(shoe.id)">Add to Cart</button>
                 <a [routerLink]="['/product', shoe.id]">
                     <button mat-raised-button color="primary">View Details</button>
                 </a>
@@ -31,5 +41,5 @@
         </div>
       </div>
     </div>
-    </div>
+    </div>   
 
