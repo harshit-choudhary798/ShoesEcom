@@ -1,0 +1,213 @@
+.container {
+    text-align: center;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+
+  .empty-container{
+   margin-top: 50px;
+  }
+  
+  .cart-heading {
+    font-size: 48px;
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-family: 'Mochiy Pop One', sans-serif;
+  }
+  
+  .description {
+    font-size: 24px;
+    margin-bottom: 20px;
+  
+    color: black;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .empty-cart {
+
+    height: max-content;
+  }
+  
+  .product-links {
+    margin-top: 20px;
+  }
+  
+
+  button {
+    font-size: 16px;
+  }
+  .products{
+    width: 48%;
+  }
+
+  mat-card{
+    width: 700px;
+  }
+  mat-header-cell{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+  }
+
+  .product-brand{
+ 
+    font-weight: 500 !important;
+    font-size: 1.3rem;
+  }
+
+  .mat-elevation-z8{
+    width: 100%;
+  }
+
+
+.container1 {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.order-card {
+  width: 600px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  background-color:  #fffdf6;
+  border: 1px solid #fff;
+
+}
+
+.order-card-header {
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.order-card-title {
+  margin-left: 10px;
+}
+
+.order-card-content {
+  padding: 20px;
+}
+
+.theme-color {
+  color: #004cb9;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.items-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.keys {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.amounts {
+
+  /* color: black; */ 
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1rem !important;
+  color: red;
+}
+
+.mat-divider {
+  border-top: 1px dotted #000;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #004cb9;
+  border-color: #004cb9;
+  padding: 12px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 1px;
+  font-size: 17px;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #004cb9;
+  border-color: #004cb9;
+  padding: 12px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 1px;
+  font-size: 17px;
+}
+
+.promo{
+  display: flex;
+  justify-content: right;
+}
+
+.apply-code{
+  width: 38% !important; margin-bottom: 40px;
+}
+.apply-code-header{
+  display: flex; justify-content: flex-end;
+}
+.order-card-actions{
+  display: flex; justify-content: center; align-items: center;
+}
+.order-card-actions-btn{
+  width: 60% !important; margin-bottom: 40px;
+  
+}
+.place-order-container{
+  margin-top: 20px;
+  display:  flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 0 100px;
+  gap: 20px;
+}
+.place-order{
+  padding: 0 100px;
+}
+
+.scrollable-table {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  max-height: 700px; 
+  overflow: hidden;
+  overflow-y: auto;
+  width: 100%;
+}
+.heading-rows{
+  position: fixed;
+  width: 100%;
+
+}
+
+.scrollable-table::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+
+.scrollable-table::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollable-table::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
