@@ -1,0 +1,72 @@
+<div class="container1" *ngIf="!order"> 
+    <h4 align="right" style="font-weight: 800; font-size: 1.5rem; cursor: pointer; " matDialogClose>X</h4>
+    <ng-container class="payment-container">
+        <mat-card class="order-card">
+            <mat-card-header class="order-card-header">
+                <h2>ORDER DETAILS</h2>
+            </mat-card-header>
+
+            <!-- <mat-divider></mat-divider> -->
+
+            <mat-card-content class="order-card-content">
+                <!-- <h3 class="theme-color">Payment Summary</h3> -->
+
+                <!-- <div >
+                    <mat-divider></mat-divider>
+                </div> -->
+
+             <div class="items-details">
+                    <span class="keys">Product Price</span>
+                    <span class="amounts">${{total}}.00</span>
+                </div> 
+
+                <div class="items-details">
+                    <small class="keys">Shipping</small>
+                    <small class="amounts">$75.00</small>
+                </div>
+
+                <div class="items-details">
+                    <small class="keys">Tax</small>
+                    <small class="amounts">$10.00</small>
+                </div>
+
+                <div class="items-details">
+                    <span class="keys">Total</span>
+
+                    <span class="amounts"><span *ngIf="applied" ><s>${{ActualAmount}}.00</s></span>  ${{totalAmount}}.00</span>
+                </div>
+
+                <div >
+                <div class="promo">
+                  <mat-form-field appearance="fill">
+
+
+                  <mat-label>Apply Coupon</mat-label>
+                  <input matInput placeholder="Apply code" value="harshit123" width="50%" [(ngModel)]="promocode">
+                  
+                </mat-form-field>
+                
+              </div>
+              <div class="apply-code-header">
+                <button mat-raised-button color="primary"  class="apply-code" (click)="checkPromo(promocode)" > Apply Code</button>
+              
+              </div>
+            </div>
+            </mat-card-content>
+
+
+
+            <mat-card-actions class="order-card-actions">
+              <button mat-raised-button color="accent" class="order-card-actions-btn" (click)="orderPlaced()">Place you order</button>
+            </mat-card-actions>
+        </mat-card>
+    </ng-container>
+</div>
+
+<div *ngIf="order" class="order-thanks-container">
+    <h1 class="order-thanks-heading">Thanks For Ordering. We Will Contact You Soon</h1>
+    <button mat-fab  class="done">
+      <mat-icon>done</mat-icon>
+    </button>
+  </div>
+  
