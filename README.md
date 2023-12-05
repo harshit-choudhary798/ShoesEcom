@@ -1,27 +1,58 @@
-# ShoesEcom
+Certainly! Based on the information provided in your conversations, it seems like you are working on an Angular project that involves creating a web application for an e-commerce platform dealing with shoes. Here's a brief overview:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
+### Project Overview:
 
-## Development server
+1. Technology Used:
+   - Frontend:
+     - HTML, CSS, JavaScript
+     - Angular framework
+     - Angular Material for UI components
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. Features and Components:
+   - Product Listing:
+     - Fetching shoe data from an API using Angular's HttpClient.
+     - Displaying product details such as image, price, brand, and quantity in a table format.
 
-## Code scaffolding
+   - Shopping Cart:
+     - Utilizing Angular services for managing cart functionality.
+     - Adding items to the cart with dynamic quantity updates.
+     - Displaying the cart with relevant information (image, price, brand, and quantity).
+     - Implementing features like updating cart quantities and removing items.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+   - Order Placement:
+     - Integrating a payment component for placing orders.
+     - Using Angular Material components for UI elements in the payment process.
 
-## Build
+   - Routing:
+     - Utilizing Angular Router for navigation between different components/pages.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   - **Responsive Design:
+     - Making the application responsive using media queries for various screen sizes.
+     - Adapting UI components for a mobile-friendly experience.
 
-## Running unit tests
+   - Styling:
+     - Applying styles using CSS, including custom styles for Angular Material components.
+     - Implementing a scrollable table with a fixed header.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   - Service Integration:
+     - Using Angular services to manage data and communication between components.
+     - Handling asynchronous operations with Observables from the RxJS library.
 
-## Running end-to-end tests
+   - Project Structure:
+     - Organizing components, services, and other files in a structured Angular project.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+![Screenshot (1168)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/df0bb395-fed5-4402-8771-d8794eeb3a76)
+
+![Screenshot (1166)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/5270560e-1e93-4049-b7b8-7383eb4a73cc)
+
+![Screenshot (1167)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/a793bbcc-1f78-4fe4-a614-28b22ce9ca24)
+
+![Screenshot (1170)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/bfbe79c4-823b-4a58-92d1-5e1e5940507e)
+
+![Screenshot (1171)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/3af813b1-f4f4-4b57-bc40-355f84ac6971)
+
+![Screenshot (1169)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/79363f17-2106-41e9-9b71-79bdde3536ff)
