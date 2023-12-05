@@ -18,19 +18,21 @@ import {MatIconModule} from '@angular/material/icon';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-
+import { CartComponent } from './cart/cart.component';
 import { MatTableModule } from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
-
+import { PaymentComponent } from './payment/payment.component';
 import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProductitemComponent,
-    NavbarComponent
+    NavbarComponent,
+    CartComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
