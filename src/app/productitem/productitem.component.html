@@ -9,11 +9,11 @@
 
             
 
-            <h1 class="product-name">{{ product.name }}</h1>
-            <p class="product-description">{{ product.details }}</p>
+            <h1 class="product-name" style="color: black; font-weight: 900;">{{ product.name }}</h1>
+            <p class="product-description" style="color: black;">{{ product.details }}</p>
             <mat-nav-list class="product-list" disableRipple>
                 <mat-list-item class="product-list-item" >
-                    <h1 mat-line class="product-label" > Brand: <span mat-line
+                    <h1 mat-line class="product-label" style="font-weight: 900 !important"> Brand: <span mat-line
                             class="product-value">{{ product.brand_name }}</span></h1>
 
                 </mat-list-item>
@@ -59,7 +59,7 @@
             <mat-list-item class="footer" style="margin-right: 10px;">
                 <mat-card-footer align="right">
                     <div class="product-links">
-                        <a mat-flat-button color="warn" href="#"><mat-icon>shopping_cart</mat-icon> Add to Cart</a>                       
+                        <a mat-flat-button color="accent" href="#"><mat-icon>shopping_cart</mat-icon> Add to Cart</a>                       
                       </div>
                 </mat-card-footer>
             </mat-list-item>
