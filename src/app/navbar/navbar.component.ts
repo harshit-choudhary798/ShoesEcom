@@ -1,3 +1,4 @@
+import { S1Service } from './../s1.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _service:S1Service) { }
+
+  count:any=0
 
   ngOnInit(): void {
+    this._service.itemCount.subscribe((res)=>{
+      this.count=res
+    })
   }
+
+
+
 
 }
