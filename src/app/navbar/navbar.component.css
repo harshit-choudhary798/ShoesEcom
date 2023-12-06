@@ -112,7 +112,7 @@ ul {
       
     }
 
-
+    
     @media screen and (max-width: 1023px) {
       ul a.items-tobe-hidden {
         display: none !important;
@@ -144,4 +144,8 @@ ul {
     }
     }
     
-    
+    @media all and (max-width:394px){
+      .navbar li {
+        padding: 0px 20px;
+    }
+    }
