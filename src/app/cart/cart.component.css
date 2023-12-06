@@ -316,3 +316,11 @@ mat-header-cell {
 
 
 }
+@media all and (max-width:378px){
+  .cart-heading{
+    font-size: 30px;
+  }
+  .description{
+    font-size: 13px;
+  }
+}
