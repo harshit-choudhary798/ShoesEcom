@@ -31,7 +31,7 @@ export class PaymentComponent implements OnInit {
     if(!this.applied){
 
   
-    if (code === 'harshit123' && !this.applied) {
+    if (code === '123' && !this.applied) {
       const discountPercentage = 0.1;
       const discountedAmount = this.ActualAmount - (this.ActualAmount * discountPercentage);
       this.totalAmount = +discountedAmount.toFixed(2); 

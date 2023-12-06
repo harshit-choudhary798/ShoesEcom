@@ -13,8 +13,9 @@ export class HomeComponent implements OnInit {
   title = 'ShoesEcom';
   shoesData: any[] = [];
   i:any
-  // horizontalPosition: MatSnackBarHorizontalPosition = 'end';
-  // verticalPosition: MatSnackBarVerticalPosition = 'top';
+
+
+
 
   constructor(private service: S1Service,private _snackBar: MatSnackBar,private router: Router) { }
 

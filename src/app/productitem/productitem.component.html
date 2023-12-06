@@ -58,9 +58,14 @@
 
             <mat-list-item class="footer" style="margin-right: 10px;">
                 <mat-card-footer align="right">
-                    <div class="product-links">
+                      
+                    <div class="product-links" style="display: flex;justify-content: flex-end ;gap:23px" >
+                                          
                         <a mat-flat-button color="warn" (click)="addItem(product.id)"><mat-icon>shopping_cart</mat-icon> Add to Cart</a>                       
+                        <a mat-flat-button color="warn" [routerLink]="'/'"><mat-icon>home</mat-icon> Add More</a>
+                   
                       </div>
+                        
                 </mat-card-footer>
             </mat-list-item>
         </mat-card-content>
