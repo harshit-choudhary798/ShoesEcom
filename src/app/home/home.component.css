@@ -255,3 +255,9 @@ a {
 
 }
 }
+
+@media all and (max-width:477px){
+  .category-link{
+    font-size: 12px;
+  }
+}
