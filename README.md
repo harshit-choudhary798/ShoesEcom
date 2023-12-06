@@ -57,5 +57,4 @@ Process 1.npm i
 
 ![Screenshot (1170)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/bfbe79c4-823b-4a58-92d1-5e1e5940507e)
 
-Mobile Views:-
 ![Screenshot (1177)](https://github.com/harshit-choudhary798/ShoesEcom/assets/111317199/0e98ec65-e98c-43ea-97d5-2b20a2a2648f)
